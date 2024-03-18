@@ -55,6 +55,11 @@
     border-radius: 8px;
 }
 
+.linkStyle {
+    text-decoration: none;
+    color: #3f3f3f;
+}
+
 .recent-entry:hover {
     background-color: #e6eaf1;
     cursor: pointer;

@@ -1,6 +1,7 @@
 import './Sidebar.css'
 import { assets } from '../../assets/assets.js'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
 
@@ -32,7 +33,7 @@ const Sidebar = () => {
             <div className="bottom">
                 <div className="bottom-item recent-entry">
                     <img src={assets.question_icon} alt="" />
-                    {expand ? <p>Help</p> : null}
+                    <Link to="/about" className="linkStyle">{expand ? <p>About</p> : null}</Link>
                 </div>
                 <div className="bottom-item recent-entry">
                     <img src={assets.history_icon} alt="" />
