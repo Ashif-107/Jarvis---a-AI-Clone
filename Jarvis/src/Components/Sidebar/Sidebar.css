@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.sidebar {
+    display: inline-flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f0f4f9;
+    padding: 25px 15px;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.sidebar img {
+    width: 20px;
+}
+
+.menu {
+    display: block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.newchat {
+    margin-top: 25px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #e6eaf1;
+    font-size: 14px;
+    color: grey;
+    cursor: pointer;
+}
+
+.recents {
+    display: flex;
+    flex-direction: column;
+}
+
+.recent-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.recent-entry {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    padding-right: 20px;
+    color: #3f3f3f;
+    border-radius: 8px;
+}
+
+.recent-entry:hover {
+    background-color: #e6eaf1;
+    cursor: pointer;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-item {
+    padding-right: 10px;
+    cursor: pointer;
+}
