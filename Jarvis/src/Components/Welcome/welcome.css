@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.welcome {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    background: #131314;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    color: #CACCCE;
+}
+
+.nav h1 {
+    font-size: 1.5rem;
+    font-family: Google Sans, Helvetica Neue, sans-serif;
+    font-weight: 500;
+}
+
+.nav-socials {
+    display: flex;
+    gap: 23px;
+
+
+}
+
+.nav-socials a {
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    color: #CACCCE;
+}
+
+.nav-socials a:hover {
+    letter-spacing: 1px;
+}
+
+.welcome-msg {
+    color: #CACCCE;
+    font-size: 2.5rem;
+    padding-left: 50px;
+    width: 100vw;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.welcome-msg h1 {
+    margin-bottom: 25px;
+}
+
+.welcome-msg span {
+    background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.msg-text {
+    width: 900px;
+    flex: 1;
+}
+
+.msg-but {
+    margin-top: 10px;
+}
+
+.msg-text .button {
+    text-decoration: none;
+    color: #131314;
+    background: #92B9F8;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    transition: .2s ease-in-out;
+}
+
+.button:hover {
+    background: #4b90ff;
+    color: #131314;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    padding: 30px;
+    font-size: 1rem;
+    color: #CACCCE;
+    width: 100vw;
+    background: #202124;
+}
+
+.msg-img {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex: 1;
+}
+
+.msg-img img {
+    width: 45%;
+}
+
+
+@media (max-width:400px) {
+
+    * {
+        overflow-X: hidden;
+    }
+
+    .nav {
+        font-size: 1rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav h1 {
+        margin-bottom: 20px;
+        background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+
+    .nav img {
+        display: none;
+    }
+
+    .nav-socials {
+        flex-direction: column;
+    }
+
+    .welcome-msg {
+        font-size: 1rem;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .msg-text h1 {
+        margin-bottom: 10px;
+    }
+
+    .msg-text {
+        margin-bottom: 20px;
+    }
+
+    .foot {
+        font-size: 0.5rem;
+        padding: 10px;
+    }
+
+    .msg-text .button {
+        position: relative;
+        font-size: 0.7rem;
+        border-radius: 10px;
+    }
+}

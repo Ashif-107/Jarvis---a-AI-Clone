@@ -62,15 +62,15 @@ const Main = () => {
                     <div className="search-box">
                         <input
                             onChange={(e) => setInput(e.target.value)}
-                            value={input}
-                            type="text"
+                            value={input} 
+                            type="text" 
                             placeholder="Search JARVIS"
                             onKeyPress={(e) => {
                                 if (e.key === 'Enter') {
-                                    onSent();
+                                  onSent();
                                 }
-                            }}
-                        />
+                              }} 
+                            />
                         <div>
                             <img src={assets.gallery_icon} alt="" />
                             <img src={assets.mic_icon} alt="" />
