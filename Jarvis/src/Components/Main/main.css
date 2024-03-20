@@ -111,19 +111,21 @@
     cursor: pointer;
 }
 
-input {
+.search-box input {
     flex: 1;
-    background: transparent;
+    background: none;
     border: none;
     outline: none;
     padding: 8px;
     font-size: 18px;
+    color: black;
 }
 
 .search-box div {
     display: flex;
     align-self: center;
     gap: 15px;
+    color: #585858;
 }
 
 .bottom-info {
