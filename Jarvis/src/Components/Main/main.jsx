@@ -6,6 +6,9 @@ import { Context } from '../../Context/Context';
 
 const Main = () => {
 
+
+
+
     const { onSent, recentPrompt, showResult, resultData, loading, setInput, input } = useContext(Context)
 
     return (
@@ -22,19 +25,19 @@ const Main = () => {
                     </div>
                     <div className="cards">
                         <div className="card">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, labore.</p>
+                            <p>Tell Me About The Global Warming</p>
                             <img src={assets.compass_icon} alt="" />
                         </div>
                         <div className="card">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, labore.</p>
+                            <p>Explain Me about React JS</p>
                             <img src={assets.bulb_icon} alt="" />
                         </div>
                         <div className="card">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, labore.</p>
+                            <p>Which Team has Lifted More trophies In IPL</p>
                             <img src={assets.message_icon} alt="" />
                         </div>
                         <div className="card">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, labore.</p>
+                            <p>Which Team has Never won a IPL Title</p>
                             <img src={assets.code_icon} alt="" />
                         </div>
                     </div>
@@ -57,7 +60,17 @@ const Main = () => {
 
                 <div className="main-bottom">
                     <div className="search-box">
-                        <input onChange={(e) => setInput(e.target.value)} value={input} type="text" placeholder="Search JARVIS" />
+                        <input
+                            onChange={(e) => setInput(e.target.value)}
+                            value={input}
+                            type="text"
+                            placeholder="Search JARVIS"
+                            onKeyPress={(e) => {
+                                if (e.key === 'Enter') {
+                                    onSent();
+                                }
+                            }}
+                        />
                         <div>
                             <img src={assets.gallery_icon} alt="" />
                             <img src={assets.mic_icon} alt="" />

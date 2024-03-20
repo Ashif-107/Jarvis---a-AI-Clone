@@ -1,8 +1,17 @@
+:root {
+    --bg_color: white;
+    --nav: #585858;
+    --greet: #a6a8a7;
+    --card: #f0f4f9;
+    --card_hover: #dfe4ea;
+}
+
 .main {
     flex: 1;
     min-height: 100vh;
     padding-bottom: 15vh;
     position: relative;
+    background-color: var(--bg_color);
 
 }
 
@@ -12,7 +21,7 @@
     justify-content: space-between;
     font-size: 22px;
     padding: 20px;
-    color: #585858;
+    color: var(--nav);
     font-family: Google Sans, Helvetica Neue, sans-serif;
 }
 
@@ -30,7 +39,7 @@
 .greet {
     font-size: 50px;
     margin: 50px 0;
-    color: #a6a8a7;
+    color: var(--greet);
     font-weight: 500;
     padding: 20px;
     font-family: Google Sans, Helvetica Neue, sans-serif;
@@ -53,7 +62,7 @@
 .card {
     height: 200px;
     padding: 15px;
-    background-color: #f0f4f9;
+    background-color: var(--card);
     border-radius: 10px;
     position: relative;
     cursor: pointer;
@@ -63,19 +72,19 @@
     width: 35px;
     padding: 5px;
     position: absolute;
-    background-color: white;
+    background-color: var(--bg_color);
     border-radius: 20px;
     bottom: 10px;
     right: 10px;
 }
 
 .card p {
-    color: #585858;
+    color: var(--nav);
     font-size: 17px;
 }
 
 .card:hover {
-    background-color: #dfe4ea;
+    background-color: var(--card_hover);
 }
 
 .main-bottom {
@@ -92,7 +101,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 20px;
-    background-color: #f0f4f9;
+    background-color: var(--card);
     padding: 10px 20px;
     border-radius: 50px;
 }
@@ -162,7 +171,6 @@ input {
 .loader hr {
     border-radius: 8px;
     border: none;
-    background-color: #f6f7f8;
     background: linear-gradient(to right, #4b90ff, #ff5546, #4b90ff);
     background-size: 800px 50px;
     height: 20px;
@@ -199,7 +207,8 @@ input {
     .search-box {
         padding: 5px 10px;
     }
-    .search-box div{
+
+    .search-box div {
         gap: 5px;
     }
 }

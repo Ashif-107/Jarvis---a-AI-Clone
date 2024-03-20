@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
+:root {
+    --bg: #f0f4f9;
+    --newchatbg: #e6eaf1;
+    --grey: grey;
+    --recent: #3f3f3f;
+}
+
 .sidebar {
     display: inline-flex;
     min-height: 100vh;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #f0f4f9;
+    background-color: var(--bg);
     padding: 25px 15px;
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
@@ -29,9 +36,9 @@
     align-items: center;
     gap: 10px;
     padding: 10px 15px;
-    background-color: #e6eaf1;
+    background-color: var(--newchatbg);
     font-size: 14px;
-    color: grey;
+    color: var(--grey);
     cursor: pointer;
 }
 
@@ -39,6 +46,12 @@
     display: flex;
     flex-direction: column;
     animation: fadeIn 1.5s;
+    overflow-y: auto;
+    height: 400px;
+}
+
+.recent::-webkit-scrollbar {
+    display: none;
 }
 
 .recent-title {
@@ -52,17 +65,17 @@
     gap: 10px;
     padding: 10px;
     padding-right: 20px;
-    color: #3f3f3f;
+    color: var(--recent);
     border-radius: 8px;
 }
 
 .linkStyle {
     text-decoration: none;
-    color: #3f3f3f;
+    color: var(--recent);
 }
 
 .recent-entry:hover {
-    background-color: #e6eaf1;
+    background-color: var(--newchatbg);
     cursor: pointer;
 }
 
@@ -77,8 +90,23 @@
 }
 
 
-@media (max-width:600px){
+@media (max-width:600px) {
     .sidebar {
         display: none;
     }
+}
+
+
+.modal {
+    position: fixed;
+    border: 1px solid black;
+    padding: 20px;
+    left: 150px;
+    background-color: var(--bg);
+    z-index: 10;
+}
+
+.modal h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
 }
