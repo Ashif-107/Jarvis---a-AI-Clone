@@ -22,12 +22,12 @@ app.post('/login', (req, res) => {
                 res.json("success")
             }
             else {
-                res.json("password does not match")
+                res.send("password does not match")
 
             }
         }
         else {
-            res.json("No Users found")
+            res.send("No Users found")
         }
     })
 
