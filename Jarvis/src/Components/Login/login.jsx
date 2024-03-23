@@ -14,7 +14,7 @@ const login = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:3001/login', { name, password }).then(res => {
+        axios.post('https://jarvis-a-ai-clone.vercel.app/login', { name, password }).then(res => {
             console.log(res)
             if (res.data === "success") {
                 navigate('/home')

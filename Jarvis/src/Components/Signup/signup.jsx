@@ -13,7 +13,7 @@ const signup = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post('http://localhost:3001/signup', { name, email, password }).then(res => {
+        axios.post('https://jarvis-a-ai-clone.vercel.app/signup', { name, email, password }).then(res => {
             console.log(res)
             navigate('/')
         })
