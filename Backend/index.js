@@ -13,7 +13,7 @@ app.use(cors(
     }
 ))
 
-mongoose.connect("mongodb+srv://Ashif-107:Ashi@cluster0.qhzatuq.mongodb.net/Jarvis?retryWrites=true&w=majority&appName=Cluster0")
+mongoose.connect("*********")
         .then(() => console.log("Connected to MongoDB"))
         .catch(err => console.log(err));
 
